@@ -14,18 +14,18 @@
 makeCacheMatrix <- function(x = matrix()) {
 	solution <- NULL			## initialize
 	set <- function(y) {
-			x <<- y			## input arg to x in parent
-			solution <<- NULL	## clear previous solution
-		}
+		x <<- y				## input arg to x in parent
+		solution <<- NULL		## clear previous solution
+	}
 	get <- function() {
-			x			## getter for x
-		}
+		x				## getter for x
+	}
 	setsolution <- function(z) {
-			solution <<- z		## setter for inverse
-		}
+		solution <<- z			## setter for inverse
+	}
 	getsolution <- function() {
-			solution		## getter for inverse
-		}
+		solution			## getter for inverse
+	}
 	
 	list ( set = set, get = get,		## functions to parent env
 		   setsolution = setsolution, getsolution = getsolution )
